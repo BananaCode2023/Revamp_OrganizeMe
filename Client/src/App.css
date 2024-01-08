@@ -1,0 +1,38 @@
+:root{
+  --primary: #103DB7;
+  --secondary: #4C884C;
+  --surface: #F7F8FF;
+  --surface-container: #ECF1F5;
+  --neutral: #232323;
+
+  --heading-font: 'Poppins';
+  --body-font: 'DM Sans';
+
+  --heading1: 48px;
+  --heading2: 40px;
+
+  --title1: 32px;
+  --title2: 24px;
+
+  --body18: 18px;
+  --body16: 16px;
+  --body12: 12px;
+
+  --padding320: 32px 16px;
+  --padding425: 32px 24px;
+  --padding768: 48px;
+  --padding1024: 48px 72px;
+  --padding1440: 64px 88px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+}
+body{
+  background-color: var(--surface);
+}
+a{
+  text-decoration: none;
+}

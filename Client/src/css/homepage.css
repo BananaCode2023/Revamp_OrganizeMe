@@ -1,0 +1,81 @@
+.homepage-hero .hero{
+  padding: 80px 16px 124px;
+  background-image: url(../assets/homepage-bg.jpg);
+  background-position: bottom right;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.homepage-hero .hero h1{
+  color: var(--surface);
+  text-align: center;
+  margin-block: 16px;
+}
+.homepage-hero .hero img{
+  width: 100%;
+}
+.hero-btns{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.hero-btns .outlineButton{
+  border: 1px solid var(--surface);
+  color: var(--surface);
+}
+.homepage-hero h4{
+  text-align: center;
+  color: var(--surface);
+  font-size: var(--body18);
+  width: 270px;
+  margin-inline: auto;
+  margin-block: 24px;
+}
+
+@media screen and (min-width: 425px) {
+  .homepage-hero .hero{
+    padding: 80px 16px 132px;
+  }
+  .homepage-hero .hero img{
+    padding: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .homepage-hero .hero{
+    padding: 80px 48px 148px;
+  }
+  .homepage-hero .hero img{
+    padding: 0 48px;
+  }
+  .homepage-hero h4{
+    font-size: var(--body18);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .homepage-hero .hero{
+    padding: 80px 80px 184px;
+  }
+  .homepage-hero .hero img{
+    padding: 0 48px;
+    max-width: 720px;;
+    margin-inline: auto;
+  }
+  .homepage-hero h4{
+    font-size: var(--title2);
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .homepage-hero .hero{
+    padding: 80px 80px 240px;
+  }
+  .homepage-hero h4{
+    font-size: var(--title1);
+  }
+}

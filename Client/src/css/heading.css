@@ -1,0 +1,16 @@
+h1{
+  font-size: var(--title1);
+  font-family: var(--heading-font);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  h1{
+    font-size: var(--heading2);
+  }
+}
+@media screen and (min-width: 1280px) {
+  h1{
+    font-size: var(--heading1);
+  }
+}

@@ -1,0 +1,39 @@
+.filledButton,
+.outlineButton{
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--body18);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  
+  svg{
+    font-size: 23px
+  }
+}
+
+.filledButton{
+  background-color: var(--secondary);
+  color: var(--surface);
+  border: none;
+}
+.outlineButton{
+  padding: 6.5px 16px;
+  background-color: transparent;
+  color: var(--surface);
+  border: 1px solid var(--surface);
+}
+
+.filledButton:hover{
+  background-color: #457b45;
+}
+.outlineButton:hover{
+  color: var(--surface);
+}
+.filledButton:hover,
+.tonalButton:hover,
+.outlineButton:hover{
+  transform: translateY(-2px);
+}
