@@ -29,76 +29,40 @@ const testimoniesData = [
     comment: `
     Simplicity meets productivity. I adore how this app transformed my chaos into order. Managing tasks has never been more straightforward and satisfying
     `,
-    name: 'Elon Musk'
+    name: 'Jeff Bezos'
   },
   {
     id: 4,
     rating: '⭐⭐⭐⭐⭐',
     comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
+    Task managemend made elegant! This app's design and functionality are a perfect match. It's my go-to for staying organized and on top of my responsibilities
     `,
-    name: 'Elon Musk'
+    name: 'Steve Jobs'
   },
   {
     id: 5,
     rating: '⭐⭐⭐⭐⭐',
     comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
+    This app embodies productivity. Its intuitive features effortlessly enhance my daily routine. I'm more organized and focused, thanks to its smart task management.
     `,
-    name: 'Elon Musk'
+    name: 'Jack Ma'
   },
   {
     id: 6,
     rating: '⭐⭐⭐⭐⭐',
     comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
+    I'm in awe of this app's effectiveness. Managing tasks is now second nature, thanks to its intuitive design. It's the secret to my enhanced productivity and peace of mind
     `,
-    name: 'Elon Musk'
+    name: 'Oprah Winfrey'
   },
   {
     id: 7,
     rating: '⭐⭐⭐⭐⭐',
     comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
+    With OrganizeMe, everyday is a productive day. Its no-nonsense approach to task management keeps me on top of my game. Say hello to stress-free organization and goodbye to missed deadlines
     `,
-    name: 'Elon Musk'
-  },
-  {
-    id: 8,
-    rating: '⭐⭐⭐⭐⭐',
-    comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
-    `,
-    name: 'Elon Musk'
-  },
-  {
-    id: 9,
-    rating: '⭐⭐⭐⭐⭐',
-    comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
-    `,
-    name: 'Elon Musk'
-  },
-  {
-    id: 10,
-    rating: '⭐⭐⭐⭐⭐',
-    comment: `
-    A genuine game-changer! This app's intuitive layout and seamless
-    syncing keep my tasks organized, making productivity effortless
-    and stress-free.
-    `,
-    name: 'Elon Musk'
+    name: 'Henry Sy'
   },
 ]
+
+export default testimoniesData

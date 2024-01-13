@@ -1,7 +1,7 @@
 import React from 'react'
-import '../css/heading.css'
+import '../css/headings.css'
 
-function Heading({text}) {
+function Headings({text}) {
   return (
       <h1>
         {text}
@@ -9,4 +9,4 @@ function Heading({text}) {
   )
 }
 
-export default Heading
+export default Headings

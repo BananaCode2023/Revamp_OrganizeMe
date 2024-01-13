@@ -4,6 +4,7 @@ import { Toaster } from "react-hot-toast";
 import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
 import Features from './pages/Features';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path='/' element={<Homepage/>}/>
             <Route path='/features' element={<Features/>}/>
           </Routes>
+        <Footer/>
       </Router>
     </>
   )

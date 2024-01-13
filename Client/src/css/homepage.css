@@ -1,3 +1,4 @@
+/* HOMEPAGE HERO STYLINGS */
 .homepage-hero .hero{
   padding: 80px 16px 124px;
   background-image: url(../assets/homepage-bg.jpg);
@@ -34,16 +35,120 @@
   margin-block: 24px;
 }
 
+/* TESTIMONIES STYLINGS */
+.testimonies{
+  padding: 32px 0;
+}
+.testimonies h2{
+  padding: 32px 16px;
+}
+
+@keyframes sliding {
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(-971%);
+  }
+}
+.testimony-slider{
+  display: flex;
+  gap: 32px;
+  overflow: hidden;
+}
+.testimony{
+  position: relative;
+  min-width: 320px;
+  min-height: 300px;
+  background-color: var(--surface-container);
+  padding: 24px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 2px 2px 16px rgba(0,0,0,0.1);
+  animation: sliding 100s linear infinite;
+}
+.testimony p{
+  font-size: var(--body16);
+  font-family: var(--body-font);
+}
+.testimony h5{
+  font-weight: 600;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  font-size: var(--body16);
+}
+.testimonies .container{
+  background-color: var(--primary);
+  height: 320px;
+  margin-top: -150px;
+  padding-top: 200px;
+  width: 100%;
+  max-width: 100%;
+  padding-inline: 16px;
+}
+.partner-brands{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 768px;
+  margin-inline: auto;
+}
+.partner-brands h3{
+  font-size: var(--body16);
+  font-weight: 600;
+  font-family: var(--heading-font);
+  color: #DFE8FF;
+}
+.partner-brands img{
+  width: 10%;
+  height: initial;
+}
+
+/* EXPLORE STYLINGS */
+.explore{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+
+  h3{
+    text-align: center;
+    margin-block: 16px;
+  }
+}
+.world-top, .world-bottom{
+  width: 60%;
+  max-width: 320px;
+}
+
 @media screen and (min-width: 425px) {
+  /* HOMEPAGE HERO STYLINGS */
   .homepage-hero .hero{
     padding: 80px 16px 132px;
   }
   .homepage-hero .hero img{
     padding: 32px;
   }
+  
+  /* TESTIMONIES STYLINGS */
+  .testimonies h2{
+    padding: 32px 24px;
+  }
+  .testimonies .container{
+    padding-inline: 24px;
+  }
+
+  /* EXPLORE STYLINGS */
+  .explore{
+    padding: 32px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  /* HOMEPAGE HERO STYLINGS */
   .homepage-hero .hero{
     padding: 80px 48px 148px;
   }
@@ -54,28 +159,96 @@
     font-size: var(--body18);
     width: 100%;
   }
+
+  /* TESTIMONIES STYLINGS */
+  .testimonies{
+    padding: 32px 0 48px;
+  }
+  .testimonies h2{
+    padding: 32px;
+  }
+  .testimony h5{
+    font-weight: 600;
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    font-size: var(--body18);
+  }
+  .partner-brands h3{
+    font-size: var(--title2);
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: #DFE8FF;
+  }
+  .testimonies .container{
+    padding-inline: 48px;
+  }
+
+  /* EXPLORE STYLINGS */
+  .explore{
+    padding: 48px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  /* HOMEPAGE HERO STYLINGS */
   .homepage-hero .hero{
     padding: 80px 80px 184px;
   }
   .homepage-hero .hero img{
     padding: 0 48px;
-    max-width: 720px;;
+    max-width: 720px;
     margin-inline: auto;
   }
   .homepage-hero h4{
     font-size: var(--title2);
     margin-bottom: 32px;
   }
+
+  /* TESTIMONIES STYLINGS */
+  .testimonies{
+    padding: 32px 0 56px;
+  }
+  .testimonies h2{
+    padding: 48px 72px;
+  }
+
+  /* EXPLORE STYLINGS */
+  .explore{
+    padding: 48px 72px;
+
+    h3{
+      margin-block: 32px;
+    }
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  /* HOMEPAGE HERO STYLINGS */
   .homepage-hero .hero{
     padding: 80px 80px 240px;
   }
   .homepage-hero h4{
-    font-size: var(--title1);
+    font-size: var(--title2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonies{
+    padding: 32px 0 64px;
+  }
+  .testimonies h2{
+    padding: 48px 88px;
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+  .testimony-slider{
+    max-width: 1920px;
+    margin-inline: auto;
+  }
+
+  /* EXPLORE STYLINGS */
+  .explore{
+    padding: 48px 88px;
   }
 }
