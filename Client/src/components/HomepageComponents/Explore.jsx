@@ -2,14 +2,8 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import explore1 from '../../assets/explore1.png'
 import explore2 from '../../assets/explore2.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 function Explore() {
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <section 

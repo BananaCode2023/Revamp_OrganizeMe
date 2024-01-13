@@ -51,16 +51,27 @@ function Navbar() {
           </Link>
 
           <div className='nav-links'>
-            <Link to='/features'>
+            <Link 
+            to='/features'
+            id='nav-features'
+            >
               Features
             </Link>
-            <Link>
+            <Link
+            to=''
+            id='nav-about'
+            >
               About
             </Link>
-            <Link>
+            <Link
+            to=''
+            id='nav-login'
+            >
               Login
             </Link>
-            <Link>
+            <Link
+            to=''
+            >
               Start For Free
             </Link>
           </div>

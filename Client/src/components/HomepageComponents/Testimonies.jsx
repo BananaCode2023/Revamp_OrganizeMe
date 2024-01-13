@@ -6,21 +6,13 @@ import partnerBrand2 from '../../assets/partnerBrand2.png'
 import partnerBrand3 from '../../assets/partnerBrand3.png'
 import partnerBrand4 from '../../assets/partnerBrand4.png'
 import partnerBrand5 from '../../assets/partnerBrand5.png'
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 function Testimonies() {
 
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
-
   return (
     <div 
     className='testimonies' 
-    data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom"
     >
       <h2>
       Loved by thousands of users<br/>

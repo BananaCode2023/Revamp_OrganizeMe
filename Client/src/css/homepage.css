@@ -29,7 +29,6 @@
 .homepage-hero h4{
   text-align: center;
   color: var(--surface);
-  font-size: var(--body18);
   width: 270px;
   margin-inline: auto;
   margin-block: 24px;
@@ -57,7 +56,6 @@
   overflow: hidden;
 }
 .testimony{
-  position: relative;
   min-width: 320px;
   min-height: 300px;
   background-color: var(--surface-container);
@@ -68,6 +66,8 @@
   gap: 16px;
   box-shadow: 2px 2px 16px rgba(0,0,0,0.1);
   animation: sliding 100s linear infinite;
+  position: relative;
+  z-index: -1;
 }
 .testimony p{
   font-size: var(--body16);
@@ -78,7 +78,6 @@
   position: absolute;
   bottom: 24px;
   right: 24px;
-  font-size: var(--body16);
 }
 .testimonies .container{
   background-color: var(--primary);
@@ -88,6 +87,8 @@
   width: 100%;
   max-width: 100%;
   padding-inline: 16px;
+  position: relative;
+  z-index: -2;
 }
 .partner-brands{
   display: flex;
@@ -97,7 +98,6 @@
   margin-inline: auto;
 }
 .partner-brands h3{
-  font-size: var(--body16);
   font-weight: 600;
   font-family: var(--heading-font);
   color: #DFE8FF;
@@ -172,10 +172,8 @@
     position: absolute;
     bottom: 24px;
     right: 24px;
-    font-size: var(--body18);
   }
   .partner-brands h3{
-    font-size: var(--title2);
     font-weight: 600;
     font-family: var(--heading-font);
     color: #DFE8FF;
@@ -201,7 +199,6 @@
     margin-inline: auto;
   }
   .homepage-hero h4{
-    font-size: var(--title2);
     margin-bottom: 32px;
   }
 

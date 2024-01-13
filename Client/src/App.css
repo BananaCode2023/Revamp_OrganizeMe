@@ -3,7 +3,8 @@
   --secondary: #4C884C;
   --surface: #F7F8FF;
   --surface-container: #ECF1F5;
-  --neutral: #232323;
+  --neutral: #282828;
+  --neutral80: rgba(40,40,40,0.8);
 
   --heading-font: 'Poppins';
   --body-font: 'DM Sans';
@@ -42,13 +43,40 @@ h2{
   color: var(--neutral);
   font-size: var(--body18);
 }
+h3{
+  font-size: var(--body16);
+  color: var(--neutral);
+}
+h4{
+  font-size: var(--body18);
+  color: var(--neutral);
+}
+h5{
+  font-size: var(--body16);
+  color: var(--neutral);
+}
 @media screen and (min-width: 425px) {
   h2{
     font-size: var(--title2);
   }
 }
+@media screen and (min-width: 768px) {
+  h3{
+    font-size: var(--title2);
+  }
+  h4{
+    font-size: var(--body18);
+  }
+  h5{
+    font-size: var(--body18);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   h2{
     font-size: var(--title1);
+  }
+  h4{
+    font-size: var(--title2);
   }
 }

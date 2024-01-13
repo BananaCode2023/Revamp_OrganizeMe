@@ -4,11 +4,10 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 32px;
-
-  small{
-    opacity: 0.8;
-    text-align: center;
-  }
+}
+footer small{
+text-align: center;
+color: #7c7c7c;
 }
 .footer-row{
   display: flex;
