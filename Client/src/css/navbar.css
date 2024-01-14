@@ -50,6 +50,14 @@ nav{
     transform: translateX(100%);
   }
 }
+@keyframes slide-left {
+  from{
+    transform: translateX(200px);
+  }
+  to{
+    transform: translateX(0);
+  }
+}
 .menu{
   top: 56.56px;
   background-color: var(--surface-container);
@@ -60,7 +68,7 @@ nav{
   flex-direction: column;
   align-items: flex-end;
   padding: 16px;
-  gap: 8px;
+  gap: 24px;
   height: 100vh;
   animation: slide-in 0.4s;
 
@@ -68,11 +76,21 @@ nav{
     color: var(--neutral);
     font-size: var(--body18);
 
+    &:nth-child(1){
+      animation: slide-left .25s;
+    }
+    &:nth-child(2){
+      animation: slide-left .5s;
+    }
+    &:nth-child(3){
+      animation: slide-left .75s;
+    }
     &:nth-child(4){
       background-color: var(--secondary);
       color: var(--surface);
       padding: 8px 16px;
       border-radius: 4px;
+      animation: slide-left .8s;
     }
   }
 }
@@ -161,6 +179,9 @@ nav{
   nav{
     padding: 16px 32px;
   }
+  .menu, .slide-out{
+    display: none;
+  }
   .mobile-nav{
     display: none;
   }
@@ -188,9 +209,10 @@ nav{
         color: var(--surface);
         padding: 8px 16px;
         border-radius: 4px;
+        transition: 0.2s;
       }
       &:nth-child(4):hover{
-        background-color: #457b45;
+        background-color: #148752;
       }
     }
   }

@@ -21,7 +21,7 @@ function HomepageHero() {
           <Link>
             <Buttons buttonType="filledButton" buttonText="Get Started" />
           </Link>
-          <Link>
+          <Link to='/features'>
             <Buttons buttonType="outlineButton" buttonText="Explore" />
           </Link>
         </div>

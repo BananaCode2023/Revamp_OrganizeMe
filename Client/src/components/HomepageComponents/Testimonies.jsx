@@ -1,5 +1,3 @@
-import React, { useEffect } from 'react'
-import Headings from '../Headings'
 import TestimonySlider from './TestimonySlider'
 import partnerBrand1 from '../../assets/partnerBrand1.png'
 import partnerBrand2 from '../../assets/partnerBrand2.png'
@@ -9,7 +7,6 @@ import partnerBrand5 from '../../assets/partnerBrand5.png'
 
 
 function Testimonies() {
-
   return (
     <div 
     className='testimonies' 

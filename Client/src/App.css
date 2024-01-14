@@ -1,9 +1,11 @@
 :root{
   --primary: #103DB7;
-  --secondary: #4C884C;
+  --secondary: #19A262;
   --surface: #F7F8FF;
   --surface-container: #ECF1F5;
   --neutral: #282828;
+  --neutral10: rgba(40,40,40,0.1);
+  --neutral30: rgba(40,40,40,0.3);
   --neutral80: rgba(40,40,40,0.8);
 
   --heading-font: 'Poppins';
@@ -37,6 +39,9 @@ body{
 a{
   text-decoration: none;
 }
+p{
+  font-size: var(--body16);
+}
 h2{
   font-family: var(--heading-font);
   font-weight: 600;
@@ -55,12 +60,33 @@ h5{
   font-size: var(--body16);
   color: var(--neutral);
 }
+
+.heading{
+  padding: 120px 0 48px;
+  text-align: center;
+  color: var(--neutral);
+
+  h1{
+    line-height: 56px;
+    animation: fade-up 0.4s;
+  }
+  h4{
+    font-size: var(--body16);
+    padding: 16px 8px;
+    animation: fade-up 0.8s;
+  }
+}
+
+
 @media screen and (min-width: 425px) {
   h2{
     font-size: var(--title2);
   }
 }
 @media screen and (min-width: 768px) {
+  p{
+    font-size: var(--body18);
+  }
   h3{
     font-size: var(--title2);
   }
@@ -70,6 +96,16 @@ h5{
   h5{
     font-size: var(--body18);
   }
+
+  .heading{
+    h4{
+      max-width: 480px;
+      line-height: 24px;
+      color: var(--neutral80);
+      margin-inline: auto;
+      font-size: var(--body18);
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -78,5 +114,14 @@ h5{
   }
   h4{
     font-size: var(--title2);
+  }
+  
+  .heading{
+  
+    h4{
+      max-width: 600px;
+      font-size: var(--title2);
+      line-height: 32px;
+    }
   }
 }

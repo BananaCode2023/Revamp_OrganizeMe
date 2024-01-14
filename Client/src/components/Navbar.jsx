@@ -58,19 +58,19 @@ function Navbar() {
               Features
             </Link>
             <Link
-            to=''
+            to='/about'
             id='nav-about'
             >
               About
             </Link>
             <Link
-            to=''
+            to='/auth/login'
             id='nav-login'
             >
               Login
             </Link>
             <Link
-            to=''
+            to='auth/signup'
             >
               Start For Free
             </Link>
@@ -85,13 +85,13 @@ function Navbar() {
             <Link to='/features' onClick={handleOpenMenu}>
               Features
             </Link>
-            <Link onClick={handleOpenMenu}>
+            <Link to='/about' onClick={handleOpenMenu}>
               About
             </Link>
-            <Link onClick={handleOpenMenu}>
+            <Link to='/auth/login' onClick={handleOpenMenu}>
               Login
             </Link>
-            <Link onClick={handleOpenMenu}>
+            <Link to='auth/signup' onClick={handleOpenMenu}>
               Start For Free
             </Link>
           </div>

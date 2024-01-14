@@ -27,10 +27,11 @@
 }
 
 .filledButton:hover{
-  background-color: #457b45;
+  background-color: #148752;
 }
 .outlineButton:hover{
-  color: var(--surface);
+  color: var(--surface) !important;
+  background-color: var(--secondary);
 }
 .filledButton:hover,
 .tonalButton:hover,

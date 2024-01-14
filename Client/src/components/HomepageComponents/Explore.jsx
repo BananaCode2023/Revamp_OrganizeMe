@@ -8,11 +8,10 @@ function Explore() {
   return (
     <section 
     className='explore'
-    data-aos="flip-up"
     >
       <img src={explore1} alt="" className='world-top'/>
       <h3>
-        Unlock more possibilities! Dive into our features now. <Link>Click here to explore.</Link>
+        Unlock more possibilities! Dive into our features now. <Link to='/features'>Click here to explore.</Link>
       </h3>
       <img src={explore2} alt="" className='world-bottom'/>
     </section>

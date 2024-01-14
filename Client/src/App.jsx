@@ -5,6 +5,9 @@ import Homepage from './pages/Homepage';
 import Navbar from './components/Navbar';
 import Features from './pages/Features';
 import Footer from './components/Footer';
+import About from './pages/About';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 
 function App() {
@@ -13,12 +16,13 @@ function App() {
     <>
       <Toaster position="top-center" toastOptions={{ duration: 1500 }} />
       <Router>
-        <Navbar/>
           <Routes>
             <Route path='/' element={<Homepage/>}/>
             <Route path='/features' element={<Features/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/auth/login' element={<Login/>}/>
+            <Route path='/auth/signup' element={<Signup/>}/>
           </Routes>
-        <Footer/>
       </Router>
     </>
   )

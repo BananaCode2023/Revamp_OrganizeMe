@@ -1,0 +1,154 @@
+.login-page{
+  padding: var(--padding320);
+}
+.login-hero{
+  display: none;
+}
+.login-hero .hero-text{
+  margin-bottom: 48px;
+  text-align: center;
+  h2,p{
+    color: var(--surface);
+  }
+}
+.login-hero img{
+  width: 80%;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form .login-heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 24px;
+
+  img{
+    width: 50%;
+    max-width: 240px;
+    margin-bottom: 24px;
+  }
+  p{
+    color: var(--neutral80);
+  }
+}
+.login-form form button{
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 4px;
+  padding: 8px;
+
+  &:nth-child(1){
+    border: solid 2px var(--neutral30);
+    background-color: var(--surface-container);
+  }
+  &:nth-child(1):hover{
+    background-color: var(--neutral10);
+  }
+  img{
+    width: 18px;
+  }
+}
+form .form-diversion{
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  width: 250px;
+  margin: 16px 16px 24px;
+
+  
+  small{
+    text-align: center;
+    margin-top: -27px;
+    background-color: var(--surface);
+    width: 170px;
+    margin-inline: auto;
+    position: relative;
+    color: var(--neutral80);
+  }
+}
+.login-form form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form form{
+  font-size: 18px;
+  .form-input{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 4px;
+    padding: 8px;
+    border: solid 2px var(--neutral30);
+    background-color: var(--surface-container);
+    margin-bottom: 24px;
+  }
+  .checkbox{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+}
+.login-form form .submit-btn{
+  border: solid 2px var(--secondary);
+  background-color: var(--secondary);
+  color: var(--surface);
+  font-weight: 500;
+  transition: 0.2s;
+  margin-bottom: 16px;
+}
+.login-form form .submit-btn:hover{
+  border: solid 2px #148752;
+  background-color: #148752;
+}
+@media screen and (min-width: 768px) {
+  .login-form form
+  button,
+  .form-input{
+    width: 380px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-form .login-heading{
+    img{
+      width: 320px;
+    }
+  }
+  .login-page{
+    background: linear-gradient(90deg, var(--primary) 50%, transparent 50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .login-hero{
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 960px;
+    margin-left: auto;
+    height: 100vh;
+  }
+  .login-form{
+    padding: 24px 32px;
+    width: 50%;
+    max-width: 960px;
+    margin-right: auto;
+    height: 100vh;
+  }
+}
